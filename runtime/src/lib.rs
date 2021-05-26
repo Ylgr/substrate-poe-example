@@ -26,6 +26,7 @@ use sp_version::NativeVersion;
 use pallet_evm::{
 	EnsureAddressTruncated, HashedAddressMapping
 };
+use codec::{Encode, Decode};
 
 // A few exports that help ease life for downstream crates.
 #[cfg(any(feature = "std", test))]
